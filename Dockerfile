@@ -11,6 +11,7 @@ ENV PIP_CONFIG_FILE=/etc/pip.conf
 ENV PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 ENV PARALLEL = 'False'
+export no_proxy="nexus.kela.fi"
 RUN python3 -m pip install imutils
 
 USER 1000
